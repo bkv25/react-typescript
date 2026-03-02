@@ -82,11 +82,11 @@ const AdminLogin = () => {
           <ImageElement
             source="logo.png"
             previewSource={resolvedLogo}
-            alt="Twiga Tours"
+            alt={config.APP_NAME}
             className="logo"
           />
           <div>
-            <h5 className="mb-0 fw-normal default-text-color">Twiga Tours</h5>
+            <h5 className="mb-0 fw-normal default-text-color">{config.APP_NAME}</h5>
             <small className="text-muted default-text-color">
               The fun people to safari with!
             </small>

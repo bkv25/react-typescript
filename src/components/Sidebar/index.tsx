@@ -126,8 +126,8 @@ function AdminSidebar({ children }: AdminSidebarProps) {
             style={{ width: 50, height: 50 }}
           />
           <div className="logo-text">
-            <strong className="w-100 d-inline-block">Demo Admin</strong>
-            <small className="small-text text-muted">Demo Admin Panel</small>
+            <strong className="w-100 d-inline-block">{config.APP_NAME}</strong>
+            <small className="small-text text-muted">{config.APP_NAME} Panel</small>
           </div>
         </div>
 

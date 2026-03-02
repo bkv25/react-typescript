@@ -1,6 +1,7 @@
 import "./App.css";
-import { Suspense } from "react";
+import { Suspense, useEffect } from "react";
 import { useRoutes } from "react-router-dom";
+import config from "./config";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { routes } from "./routes";
@@ -8,6 +9,10 @@ import ThemeProvider from "./components/ThemeProvider/index.tsx";
 import GlobalLoader from "./components/GlobalLoader/index.tsx";
 
 function App() {
+  useEffect(() => {
+    document.title = config.APP_NAME;
+  }, []);
+
   const RouteLayout = () => {
     const element = useRoutes(routes());
     return element;

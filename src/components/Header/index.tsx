@@ -72,8 +72,8 @@ function AdminHeader({ handleClickSidebar }: AdminHeaderProps) {
           style={{ width: 40, height: 40 }}
         />
         <div className="admin-header-brand d-flex flex-column">
-          <strong className="admin-header-title">Demo Admin</strong>
-          <small className="admin-header-tagline text-muted">Demo Admin Panel</small>
+          <strong className="admin-header-title">{config.APP_NAME}</strong>
+          <small className="admin-header-tagline text-muted">{config.APP_NAME} Panel</small>
         </div>
       </div>
 
