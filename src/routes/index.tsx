@@ -1,4 +1,4 @@
-import React, { type ReactNode } from "react";
+import { type ReactNode } from "react";
 import { AdminLayout } from "../layout";
 import { NotFoundComponent } from "../pages";
 import { adminRoutes } from "./admin";
